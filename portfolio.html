@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio • SM T-Shirt Printing Services</title>
+  <meta name="description" content="Portfolio of DTF prints, embroidery, polos, hoodies, and bulk orders." />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Go to Home">
+      <img class="brand-logo" src="logo.svg" alt="SM Logo" onerror="this.style.display='none'"/>
+      <div class="brand-text">
+        <div class="brand-title">SM T-Shirt Printing Services</div>
+        <div class="brand-sub">Portfolio • Real work samples</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="portfolio.html">Portfolio</a>
+      <button class="btn btn-primary btn-sm" id="contactBtn">Contact</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="portfolio-head">
+      <div>
+        <h1>Portfolio</h1>
+        <p class="lead">Replace placeholders with your photos. Each card can be one project.</p>
+      </div>
+
+      <div class="portfolio-actions">
+        <input class="search" id="searchInput" type="search" placeholder="Search (logo, polo, hoodie, bulk...)" />
+      </div>
+    </section>
+
+    <section class="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="dtf">DTF Prints</button>
+      <button class="chip" data-filter="embroidery">Embroidery</button>
+      <button class="chip" data-filter="polos">Polos</button>
+      <button class="chip" data-filter="hoodies">Hoodies</button>
+      <button class="chip" data-filter="bulk">Bulk</button>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <!-- Replace .img-placeholder with <img src="your-image.jpg" alt="..."> -->
+
+      <article class="work card" data-tags="dtf bulk logo" data-title="Company Logo Tee Set">
+        <div class="work-img">
+          <div class="img-placeholder">Upload Photo</div>
+        </div>
+        <div class="work-body">
+          <h3>Company Logo Tee Set</h3>
+          <p>Front chest logo + full back print. Clean alignment and vibrant colors.</p>
+          <div class="tags">
+            <span class="tag">DTF</span><span class="tag">Bulk</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work card" data-tags="embroidery polos uniform" data-title="Embroidered Polo Uniforms">
+        <div class="work-img">
+          <div class="img-placeholder">Upload Photo</div>
+        </div>
+        <div class="work-body">
+          <h3>Embroidered Polo Uniforms</h3>
+          <p>Professional stitched logo for business staff uniforms.</p>
+          <div class="tags">
+            <span class="tag">Embroidery</span><span class="tag">Polos</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work card" data-tags="dtf hoodies event" data-title="Event Hoodie Print">
+        <div class="work-img">
+          <div class="img-placeholder">Upload Photo</div>
+        </div>
+        <div class="work-body">
+          <h3>Event Hoodie Print</h3>
+          <p>Bold design with durable finish—great for events and giveaways.</p>
+          <div class="tags">
+            <span class="tag">DTF</span><span class="tag">Hoodies</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work card" data-tags="dtf logo minimal" data-title="Single Color Logo Print">
+        <div class="work-img">
+          <div class="img-placeholder">Upload Photo</div>
+        </div>
+        <div class="work-body">
+          <h3>Single Color Logo Print</h3>
+          <p>Simple and sharp. Perfect for small chest logos.</p>
+          <div class="tags">
+            <span class="tag">DTF</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work card" data-tags="bulk dtf team" data-title="Bulk Order – Team Shirts">
+        <div class="work-img">
+          <div class="img-placeholder">Upload Photo</div>
+        </div>
+        <div class="work-body">
+          <h3>Bulk Order – Team Shirts</h3>
+          <p>Consistent sizing, print placement, and quality control.</p>
+          <div class="tags">
+            <span class="tag">Bulk</span><span class="tag">DTF</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work card" data-tags="embroidery hats cap" data-title="Hat Embroidery">
+        <div class="work-img">
+          <div class="img-placeholder">Upload Photo</div>
+        </div>
+        <div class="work-body">
+          <h3>Hat Embroidery</h3>
+          <p>Clean stitching for brand visibility and professional look.</p>
+          <div class="tags">
+            <span class="tag">Embroidery</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <h2>Want a quote fast?</h2>
+        <p>Send your design + quantity. We’ll reply with pricing and timeline.</p>
+      </div>
+      <button class="btn btn-primary" id="contactBtn2">Contact Us</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">SM T-Shirt Printing Services</div>
+        <div class="footer-sub">© <span id="year"></span></div>
+      </div>
+      <div class="footer-right">
+        <button class="btn btn-ghost btn-sm" id="contactBtn3">Text / WhatsApp</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <h3 id="modalTitle">Contact Us</h3>
+        <button class="icon-btn" id="closeModal" aria-label="Close">✕</button>
+      </div>
+
+      <p class="modal-text">Choose how you want to message us:</p>
+
+      <div class="modal-actions">
+        <a class="btn btn-wide" id="smsLink" href="#">📩 Text Message</a>
+        <a class="btn btn-wide" id="waLink" href="#" target="_blank" rel="noopener">🟢 WhatsApp</a>
+      </div>
+
+      <p class="modal-note">Include quantity, sizes, and front/back print details.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
